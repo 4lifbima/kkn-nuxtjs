@@ -102,7 +102,7 @@ const breadcrumbItems = computed(() => [
   { label: article.value?.title || 'Detail Artikel' }
 ])
 
-const canonicalUrl = computed(() => `https://kkn-molotabu.vercel.app/artikel/${slug.value}`)
+const canonicalUrl = computed(() => `https://kkn-nuxtjs.vercel.app/artikel/${slug.value}`)
 const encodedTitle = computed(() => encodeURIComponent(article.value?.title || 'Artikel KKN Molotabu'))
 const encodedUrl = computed(() => encodeURIComponent(canonicalUrl.value))
 

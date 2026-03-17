@@ -31,6 +31,8 @@
 
 <script setup>
 const showScrollTop = ref(false)
+const siteUrl = 'https://kkn-nuxtjs.vercel.app/'
+const ogImage = 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200&h=630&fit=crop'
 
 onMounted(() => {
   window.addEventListener('scroll', () => {
@@ -62,13 +64,25 @@ const scrollToTop = () => {
 
 useHead({
   title: 'Beranda',
-  titleTemplate: '%s | KKN Desa Molotabu'
+  titleTemplate: '%s | KKN Desa Molotabu',
+  link: [
+    { rel: 'canonical', href: siteUrl }
+  ]
 })
 
 useSeoMeta({
   description: 'Website resmi KKN Desa Molotabu berisi profil tim, artikel kegiatan, galeri, dan informasi kontak.',
   ogTitle: 'KKN Desa Molotabu',
   ogDescription: 'Profil, artikel, galeri, dan kontak resmi KKN Desa Molotabu.',
+  ogImage,
+  ogUrl: siteUrl,
+  ogType: 'website',
+  ogSiteName: 'KKN Desa Molotabu',
+  ogLocale: 'id_ID',
+  twitterTitle: 'KKN Desa Molotabu',
+  twitterDescription: 'Profil, artikel, galeri, dan kontak resmi KKN Desa Molotabu.',
+  twitterImage: ogImage,
+  twitterCard: 'summary_large_image',
   robots: 'index, follow'
 })
 </script>

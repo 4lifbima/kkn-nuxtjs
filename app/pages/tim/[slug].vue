@@ -56,7 +56,7 @@ const breadcrumbItems = computed(() => [
   { label: member.value?.name || 'Detail Tim' }
 ])
 
-const canonicalUrl = computed(() => `https://kkn-molotabu.vercel.app/tim/${slug.value}`)
+const canonicalUrl = computed(() => `https://kkn-nuxtjs.vercel.app/tim/${slug.value}`)
 
 useHead(() => ({
   title: member.value ? member.value.name : 'Detail Tim',

@@ -40,7 +40,7 @@ const breadcrumbItems = computed(() => [
   { label: item.value?.title || 'Detail Galeri' }
 ])
 
-const canonicalUrl = computed(() => `https://kkn-molotabu.vercel.app/galeri/${slug.value}`)
+const canonicalUrl = computed(() => `https://kkn-nuxtjs.vercel.app/galeri/${slug.value}`)
 
 useHead(() => ({
   title: item.value ? item.value.title : 'Detail Galeri',
