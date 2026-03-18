@@ -35,7 +35,7 @@
 
               <div class="flex items-start space-x-4">
                 <div class="w-14 h-14 bg-gradient-to-br from-[#f2321d]/10 to-orange-500/10 rounded-2xl flex items-center justify-center flex-shrink-0">
-                  <Icon icon="solar:email-linear" class="w-6 h-6 text-[#f2321d]" />
+                  <Icon icon="mage:email" class="w-6 h-6 text-[#f2321d]" />
                 </div>
                 <div>
                   <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
@@ -55,7 +55,7 @@
 
               <div class="flex items-start space-x-4">
                 <div class="w-14 h-14 bg-gradient-to-br from-[#f2321d]/10 to-orange-500/10 rounded-2xl flex items-center justify-center flex-shrink-0">
-                  <Icon icon="solar:clock-linear" class="w-6 h-6 text-[#f2321d]" />
+                  <Icon icon="svg-spinners:clock" class="w-6 h-6 text-[#f2321d]" />
                 </div>
                 <div>
                   <h4 class="font-semibold text-gray-900 mb-1">Jam Operasional</h4>

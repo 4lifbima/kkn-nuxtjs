@@ -32,7 +32,7 @@
 <script setup>
 const showScrollTop = ref(false)
 const siteUrl = 'https://kkn-nuxtjs.vercel.app/'
-const ogImage = 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200&h=630&fit=crop'
+const ogImage = 'https://kkn-nuxtjs.vercel.app/ung.png'
 
 onMounted(() => {
   window.addEventListener('scroll', () => {
@@ -67,7 +67,16 @@ useHead({
   titleTemplate: '%s | KKN Desa Molotabu',
   link: [
     { rel: 'canonical', href: siteUrl }
-  ]
+  ],
+  icon: [
+    { rel: 'icon', type: 'image/png', href: '/ung.png' },
+    { rel: 'apple-touch-icon', sizes: '180x180', href: '/ung.png' },
+    { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/ung.png' },
+    { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/ung.png' }
+    
+  ],
+  keywords: 'KKN, Kuliah Kerja Nyata, Desa Molotabu, Profil Tim, Artikel Kegiatan, Galeri Foto, Kontak',
+  author: 'Alif Bima Pradana',
 })
 
 useSeoMeta({

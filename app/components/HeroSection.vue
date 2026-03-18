@@ -8,7 +8,7 @@
     </div>
 
     <!-- Grid Pattern -->
-    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmMjMyMWQiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-40"></div>
+    <div class="absolute inset-0 bg-[url('https://media.istockphoto.com/id/1473215899/vector/tech-grid.jpg?s=612x612&w=0&k=20&c=de_JWOI4pcjQFlvBOW4I8jeAqXhRmP5_olQPmTw3UHA=')] opacity-40"></div>
 
     <div class="container-custom relative z-10 pt-20">
       <div class="text-center max-w-5xl mx-auto">
@@ -19,13 +19,13 @@
         </div>
 
         <!-- Main Headline -->
-        <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-10 animate-slide-up">
+        <h1 class="text-4xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-10 animate-slide-up">
           <span class="block text-gray-900">Kuliah Kerja Nyata</span>
           <span class="block heading-gradient">Untuk Negeri</span>
         </h1>
 
         <!-- Subheadline -->
-        <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed animate-slide-up animation-delay-200">
+        <p class="text-md md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed animate-slide-up animation-delay-200">
           Membangun <span class="font-semibold text-gray-900">Desa Molotabu</span> dengan inovasi, 
           dedikasi, dan kolaborasi untuk masa depan yang lebih baik.
         </p>

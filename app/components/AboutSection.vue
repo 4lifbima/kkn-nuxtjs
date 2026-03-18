@@ -6,37 +6,14 @@
         <div class="relative">
           <!-- Main Image Container -->
           <div class="relative">
-            <div class="absolute -inset-4 bg-gradient-to-r from-[#f2321d] to-orange-500 rounded-3xl blur-2xl opacity-20"></div>
+            <div class="absolute -inset-4 bg-gradient-to-r from-[#f2321d] to-orange-500 rounded-xl blur-2xl opacity-20"></div>
             <div class="relative card-elevated overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=1000&fit=crop" 
+                src="/kkn.png" 
                 alt="KKN Activities"
                 class="w-full h-[600px] object-cover"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-              
-              <!-- Floating Badge -->
-              <div class="absolute bottom-8 left-8 right-8">
-                <div class="bg-white/95 backdrop-blur-xl rounded-2xl p-6 shadow-2xl">
-                  <div class="flex items-center space-x-4">
-                    <div class="w-14 h-14 bg-gradient-to-br from-[#f2321d] to-orange-500 rounded-2xl flex items-center justify-center">
-                      <Icon icon="streamline-ultimate:award-trophy-1" class="w-7 h-7 text-white" />
-                    </div>
-                    <div>
-                      <p class="text-sm text-gray-500 mb-1">Pengabdian Masyarakat</p>
-                      <p class="text-lg font-bold text-gray-900">Desa Molotabu</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Experience Badge -->
-          <div class="absolute -top-6 -right-6 bg-white rounded-2xl shadow-2xl p-6 border border-gray-100">
-            <div class="text-center">
-              <p class="text-4xl font-bold heading-gradient">2026</p>
-              <p class="text-sm text-gray-500 mt-1">Tahun Pengabdian</p>
             </div>
           </div>
         </div>

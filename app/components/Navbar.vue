@@ -4,17 +4,17 @@
   >
     <div class="container-custom">
       <div
-        class="flex items-center justify-between px-4 md:px-6 py-3 rounded-2xl border border-gray-200/70 backdrop-blur-xl transition-all duration-300"
-        :class="isScrolled ? 'bg-white/95 shadow-lg shadow-gray-300/40' : 'bg-white/88 shadow-md shadow-gray-200/40'"
+        class="flex items-center justify-between px-4 md:px-6 py-3 rounded-3xl border border-gray-200/70 backdrop-blur-xl transition-all duration-300"
+        :class="isScrolled ? 'bg-white/95 shadow-lg shadow-gray-300/40' : 'bg-white shadow-md shadow-gray-200/40'"
       >
         <!-- Logo -->
         <NuxtLink to="/" class="flex items-center space-x-3 group">
-          <div class="w-12 h-12 bg-gradient-to-br from-[#f2321d] to-orange-500 rounded-2xl flex items-center justify-center shadow-lg shadow-red-500/30 group-hover:shadow-xl group-hover:shadow-red-500/40 transition-all duration-300 group-hover:scale-105">
-            <span class="text-white font-bold text-xl">K</span>
+          <div class="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center  transition-all duration-300 group-hover:scale-105">
+            <img src="/ung.png" alt="Logo KKN Molotabu" class="w-8 h-8 lg:w-10 lg:h-10" />
           </div>
           <div>
-            <h1 class="text-xl font-bold text-gray-900">KKN <span class="text-gradient">Molotabu</span></h1>
-            <p class="text-xs text-gray-500">Desa Molotabu</p>
+            <h1 class="text-md lg:text-xl font-extrabold text-gray-900">KKN <span class="text-gradient">Molotabu</span></h1>
+            <p class="text-xs text-gray-500">Kecamatan Kabila Bone</p>
           </div>
         </NuxtLink>
 
@@ -40,7 +40,7 @@
         <!-- Mobile Menu Button -->
         <button 
           @click="isMobileMenuOpen = !isMobileMenuOpen"
-          class="lg:hidden p-3 rounded-xl hover:bg-gray-100 transition-colors"
+          class="lg:hidden p-2 rounded-xl hover:bg-gray-100 transition-colors border border-gray-200"
         >
           <Icon 
             :icon="isMobileMenuOpen ? 'ci:close-md' : 'solar:hamburger-menu-linear'" 
