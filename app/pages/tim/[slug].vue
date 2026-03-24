@@ -9,15 +9,9 @@
           <div class="p-8 md:p-10">
             <p class="text-sm text-[#f2321d] font-semibold mb-2">Profil Anggota</p>
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{{ member.name }}</h1>
-            <p class="text-gray-500 mb-6">{{ member.role }}</p>
-
+            <p class="text-gray-500 ">{{ member.role }}</p>
+            <p class="text-md mb-8 mt-2">{{member.nim}}</p>
             <p class="text-gray-700 leading-relaxed mb-6">{{ member.bio }}</p>
-
-            <div class="flex flex-wrap gap-2 mb-8">
-              <span v-for="tag in member.tags" :key="tag" class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
-                {{ tag }}
-              </span>
-            </div>
 
             <div class="flex flex-wrap gap-3">
               <a v-if="member.instagram" :href="member.instagram" target="_blank" class="btn-secondary !px-5 !py-3 !text-sm">

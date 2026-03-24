@@ -7,7 +7,7 @@ export type AnggotaItem = {
   instagram?: string
   linkedin?: string
   email?: string
-  tags: string[]
+  nim: number | string
   bio: string
 }
 
@@ -21,7 +21,7 @@ export const teamMembers: AnggotaItem[] = [
     instagram: '#',
     linkedin: '#',
     email: 'rizki@kkn.ac.id',
-    tags: ['Teknik Informatika', 'Leadership'],
+    nim: '531423064',
     bio: 'Memimpin koordinasi lintas divisi untuk memastikan setiap program berjalan tepat sasaran dan tepat waktu.'
   },
   {
@@ -33,7 +33,7 @@ export const teamMembers: AnggotaItem[] = [
     instagram: '#',
     linkedin: '#',
     email: 'siti@kkn.ac.id',
-    tags: ['Administrasi', 'Komunikasi'],
+    nim: '531423006',
     bio: 'Mengelola dokumentasi kegiatan, surat menyurat, dan administrasi program KKN secara terstruktur.'
   },
   {
@@ -44,18 +44,18 @@ export const teamMembers: AnggotaItem[] = [
     photo: '/anggota/alya.png',
     instagram: '#',
     email: 'alya@kkn.ac.id',
-    tags: ['Akuntansi', 'Keuangan'],
+    nim: '531423013',
     bio: 'Bertanggung jawab atas perencanaan dan pelaporan keuangan kegiatan agar tetap transparan.'
   },
   {
     id: 4,
-    slug: 'aisyah-putri',
+    slug: 'alif-bima-pradana',
     name: 'Alif Bima Pradana',
-    role: 'Koordinator Program',
+    role: 'Software Engineer',
     photo: '/anggota/alif.png',
     instagram: '#',
     linkedin: '#',
-    tags: ['Manajemen', 'Event Organizer'],
+    nim: '531423009',
     bio: 'Menyusun timeline dan eksekusi teknis program dengan pendekatan kolaboratif bersama warga.'
   },
   {
@@ -65,7 +65,7 @@ export const teamMembers: AnggotaItem[] = [
     role: 'Koordinator Lapangan',
     photo: '/anggota/default.png',
     instagram: '#',
-    tags: ['Logistik', 'Koordinasi'],
+    nim: '531423078',
     bio: 'Memastikan kebutuhan logistik lapangan terpenuhi selama kegiatan berlangsung di lokasi program.'
   },
   {
@@ -76,7 +76,7 @@ export const teamMembers: AnggotaItem[] = [
     photo: '/anggota/default.png',
     instagram: '#',
     linkedin: '#',
-    tags: ['Public Relations', 'Media'],
+    nim: '531423085',
     bio: 'Mengelola komunikasi publik, publikasi kegiatan, dan hubungan baik dengan mitra desa.'
   },
   {
@@ -86,7 +86,7 @@ export const teamMembers: AnggotaItem[] = [
     role: 'Anggota',
     photo: '/anggota/default.png',
     instagram: '#',
-    tags: ['Dokumentasi', 'Fotografi'],
+    nim: '531423040',
     bio: 'Mendokumentasikan setiap kegiatan agar hasil program dapat dipublikasikan dengan baik.'
   },
   {
@@ -97,7 +97,7 @@ export const teamMembers: AnggotaItem[] = [
     photo: '/anggota/default.png',
     instagram: '#',
     linkedin: '#',
-    tags: ['Desain Grafis', 'Kreatif'],
+    nim: '531423077',
     bio: 'Mengembangkan aset visual dan konten kreatif untuk kebutuhan edukasi dan kampanye program.'
-  }
+  },
 ]

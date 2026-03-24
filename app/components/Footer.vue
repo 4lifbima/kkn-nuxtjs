@@ -93,7 +93,7 @@ const quickLinks = [
 
 const contacts = [
   { icon: 'solar:map-point-linear', value: 'Desa Molotabu, Kecamatan Molotabu' },
-  { icon: 'solar:email-linear', value: 'kkn@molotabu.ac.id' },
+  { icon: 'mage:email', value: 'kkn.molotabu@ung.ac.id' },
   { icon: 'solar:phone-linear', value: '+62 812-3456-7890' },
 ]
 </script>

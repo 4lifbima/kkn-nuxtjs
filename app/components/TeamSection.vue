@@ -22,7 +22,7 @@
         <div 
           v-for="member in teamMembers" 
           :key="member.id"
-          class="group card-elevated overflow-hidden"
+          class="group rounded-xl border-2 border-slate-200 overflow-hidden"
         >
           <!-- Photo -->
           <div class="relative overflow-hidden aspect-[3/4]">
@@ -64,23 +64,21 @@
           </div>
 
           <!-- Info -->
-          <div class="p-6">
+          <div class="p-6 justify-center text-center">
             <h3 class="text-lg font-bold text-gray-900 mb-1 group-hover:text-[#f2321d] transition-colors">
               {{ member.name }}
             </h3>
-            <p class="text-sm text-gray-500 mb-3">{{ member.role }}</p>
-            <div class="flex flex-wrap gap-2">
+            <div class="flex flex-wrap gap-2 justify-center">
               <span 
-                v-for="tag in member.tags" 
-                :key="tag"
-                class="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full"
+               
+                class="px-3 py-1 bg-gray-100 text-gray-600 text-md font-medium rounded-full"
               >
-                {{ tag }}
+                {{ member.nim }}
               </span>
             </div>
-            <NuxtLink :to="`/tim/${member.slug}`" class="mt-4 inline-flex items-center text-sm font-semibold text-[#f2321d]">
+            <NuxtLink :to="`/tim/${member.slug}`" class="mt-4 inline-flex items-center text-sm font-semibold text-[#f2321d] border border-primary px-8 py-2 rounded-full hover:bg-[#f2321d] hover:text-white transition-colors">
               Lihat Profil
-              <Icon icon="solar:arrow-right-linear" class="w-4 h-4 ml-1" />
+              <Icon icon="gg:profile" class="w-4 h-4 ml-1" />
             </NuxtLink>
           </div>
         </div>
