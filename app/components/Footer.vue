@@ -6,11 +6,11 @@
         <!-- Brand -->
         <div class="lg:col-span-2">
           <div class="flex items-center space-x-3 mb-6">
-            <div class="w-12 h-12 bg-gradient-to-br from-[#f2321d] to-orange-500 rounded-2xl flex items-center justify-center shadow-lg shadow-red-500/30">
-              <span class="text-white font-bold text-xl">K</span>
-            </div>
+            <div class="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center  transition-all duration-300 group-hover:scale-105">
+            <img src="/ung.png" alt="Logo KKN Molotabu" class="w-8 h-8 lg:w-10 lg:h-10" />
+          </div>
             <div>
-              <h3 class="text-xl font-bold">KKN <span class="text-orange-400">Molotabu</span></h3>
+              <h3 class="text-xl font-bold">KKN <span class="text-gradient">Molotabu</span></h3>
               <p class="text-sm text-gray-400">Desa Molotabu</p>
             </div>
           </div>
@@ -92,8 +92,8 @@ const quickLinks = [
 ]
 
 const contacts = [
-  { icon: 'solar:map-point-linear', value: 'Desa Molotabu, Kecamatan Molotabu' },
+  { icon: 'solar:map-point-linear', value: 'Desa Molotabu, Kecamatan Kabila Bone, Kabupaten Bone Bolango' },
   { icon: 'mage:email', value: 'kkn.molotabu@ung.ac.id' },
-  { icon: 'solar:phone-linear', value: '+62 812-3456-7890' },
+  { icon: 'solar:phone-linear', value: '+62 822-9138-3797' },
 ]
 </script>

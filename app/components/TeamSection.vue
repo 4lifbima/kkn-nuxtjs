@@ -20,7 +20,7 @@
       <!-- Team Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         <div 
-          v-for="member in teamMembers" 
+          v-for="member in displayedTeamMembers" 
           :key="member.id"
           class="group rounded-xl border-2 border-slate-200 overflow-hidden"
         >
@@ -97,4 +97,9 @@
 
 <script setup lang="ts">
 import { teamMembers } from '~/data/anggota'
+
+const displayedTeamMembers = computed(() => {
+  const maxCards = teamMembers.length > 4 ? 4 : 8
+  return teamMembers.slice(0, Math.min(maxCards, teamMembers.length))
+})
 </script>

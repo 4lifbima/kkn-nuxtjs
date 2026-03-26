@@ -29,7 +29,7 @@
                 </div>
                 <div>
                   <h4 class="font-semibold text-gray-900 mb-1">Alamat</h4>
-                  <p class="text-gray-600">Desa Molotabu, Kecamatan Molotabu<br>Kabupaten Gorontalo, Provinsi Gorontalo</p>
+                  <p class="text-gray-600">Desa Molotabu, Kecamatan Kabila Bone<br>Kabupaten Bone Bolango, Provinsi Gorontalo</p>
                 </div>
               </div>
 
@@ -39,7 +39,7 @@
                 </div>
                 <div>
                   <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
-                  <a href="mailto:kkn@molotabu.ac.id" class="text-gray-600 hover:text-[#f2321d] transition-colors">kkn@molotabu.ac.id</a>
+                  <a href="mailto:kkn.molotabu@ung.ac.id" class="text-gray-600 hover:text-[#f2321d] transition-colors">kkn.molotabu@ung.ac.id</a>
                 </div>
               </div>
 
@@ -49,7 +49,7 @@
                 </div>
                 <div>
                   <h4 class="font-semibold text-gray-900 mb-1">Telepon / WhatsApp</h4>
-                  <a href="tel:+628123456789" class="text-gray-600 hover:text-[#f2321d] transition-colors">+62 812-3456-7890</a>
+                  <a href="tel:+6282291383797" class="text-gray-600 hover:text-[#f2321d] transition-colors">+62 822-9138-3797</a>
                 </div>
               </div>
 
@@ -82,79 +82,18 @@
           </div>
         </div>
 
-        <!-- Contact Form -->
-        <div class="card-glass p-8">
-          <h3 class="text-2xl font-bold text-gray-900 mb-6">Kirim Pesan</h3>
-          
-          <form @submit.prevent="submitForm" class="space-y-6">
-            <div class="grid sm:grid-cols-2 gap-6">
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
-                <input
-                  v-model="form.name"
-                  type="text"
-                  placeholder="John Doe"
-                  class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#f2321d] focus:border-transparent transition-all"
-                  required
-                />
-              </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                <input
-                  v-model="form.email"
-                  type="email"
-                  placeholder="john@example.com"
-                  class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#f2321d] focus:border-transparent transition-all"
-                  required
-                />
-              </div>
-            </div>
-
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-2">Subjek</label>
-              <input
-                v-model="form.subject"
-                type="text"
-                placeholder="Subjek pesan Anda"
-                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#f2321d] focus:border-transparent transition-all"
-                required
-              />
-            </div>
-
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-2">Pesan</label>
-              <textarea
-                v-model="form.message"
-                rows="5"
-                placeholder="Tulis pesan Anda di sini..."
-                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#f2321d] focus:border-transparent transition-all resize-none"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn-primary w-full">
-              <Icon icon="solar:send-linear" class="w-5 h-5 mr-2" />
-              Kirim Pesan
-            </button>
-          </form>
-
-          <!-- Success Message -->
-          <Transition
-            enter-active-class="transition duration-300 ease-out"
-            enter-from-class="opacity-0 -translate-y-2"
-            enter-to-class="opacity-100 translate-y-0"
-            leave-active-class="transition duration-200 ease-in"
-            leave-from-class="opacity-100 translate-y-0"
-            leave-to-class="opacity-0 -translate-y-2"
-          >
-            <div v-if="formSubmitted" class="mt-6 p-4 bg-green-50 border border-green-200 rounded-xl flex items-center space-x-3">
-              <Icon icon="solar:check-circle-linear" class="w-6 h-6 text-green-600" />
-              <div>
-                <p class="font-semibold text-green-800">Pesan Terkirim!</p>
-                <p class="text-sm text-green-600">Terima kasih telah menghubungi kami.</p>
-              </div>
-            </div>
-          </Transition>
+        <!-- Map -->
+        <div class="card-glass p-2 h-full flex flex-col">
+          <div class="rounded-2xl overflow-hidden border border-gray-200 flex-1 min-h-[420px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31917.502142772606!2d123.14017600000001!3d0.46350545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x327f2bba1acbc6af%3A0x60a26ceb58d19449!2sMolotabu%2C%20Kec.%20Kabila%20Bone%2C%20Kabupaten%20Bone%20Bolango%2C%20Gorontalo!5e0!3m2!1sid!2sid!4v1774519509632!5m2!1sid!2sid"
+              class="w-full h-full"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -162,15 +101,6 @@
 </template>
 
 <script setup>
-const form = ref({
-  name: '',
-  email: '',
-  subject: '',
-  message: ''
-})
-
-const formSubmitted = ref(false)
-
 const socials = [
   { name: 'Instagram', href: 'https://instagram.com', icon: 'mdi:instagram' },
   { name: 'Facebook', href: 'https://facebook.com', icon: 'mdi:facebook' },
@@ -178,13 +108,4 @@ const socials = [
   { name: 'LinkedIn', href: 'https://linkedin.com', icon: 'mdi:linkedin' },
   { name: 'YouTube', href: 'https://youtube.com', icon: 'mdi:youtube' },
 ]
-
-const submitForm = () => {
-  // Simulate form submission
-  formSubmitted.value = true
-  setTimeout(() => {
-    formSubmitted.value = false
-    form.value = { name: '', email: '', subject: '', message: '' }
-  }, 5000)
-}
 </script>

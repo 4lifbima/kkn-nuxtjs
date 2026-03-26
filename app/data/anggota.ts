@@ -100,4 +100,59 @@ export const teamMembers: AnggotaItem[] = [
     nim: '531423077',
     bio: 'Mengembangkan aset visual dan konten kreatif untuk kebutuhan edukasi dan kampanye program.'
   },
+  {
+    id: 9,
+    slug: 'raya-rizali-mutawakkil-mantau',
+    name: 'Raya Rizali Mutawakkil Mantau',
+    role: 'Anggota',
+    photo: '/anggota/default.png',
+    instagram: '#',
+    linkedin: '#',
+    nim: '531423054',
+    bio: 'Berperan aktif dalam pelaksanaan program kerja lapangan dan penguatan kolaborasi dengan masyarakat desa.'
+  },
+  {
+    id: 10,
+    slug: 'siti-rahwati-moki',
+    name: 'Siti Rahwati Moki',
+    role: 'Anggota',
+    photo: '/anggota/default.png',
+    instagram: '#',
+    linkedin: '#',
+    nim: '531423017',
+    bio: 'Mendukung perencanaan kegiatan edukatif serta membantu pendampingan program berbasis kebutuhan warga.'
+  },
+  {
+    id: 11,
+    slug: 'sri-wahyuni',
+    name: 'Sri Wahyuni',
+    role: 'Anggota',
+    photo: '/anggota/default.png',
+    instagram: '#',
+    linkedin: '#',
+    nim: '531423039',
+    bio: 'Membantu koordinasi kegiatan harian tim dan memastikan komunikasi internal berjalan dengan baik.'
+  },
+  {
+    id: 12,
+    slug: 'suci-rahmawaty-utina',
+    name: 'Suci Rahmawaty Utina',
+    role: 'Anggota',
+    photo: '/anggota/default.png',
+    instagram: '#',
+    linkedin: '#',
+    nim: '531423024',
+    bio: 'Terlibat dalam pengumpulan data kegiatan serta penyusunan laporan kemajuan program kerja tim KKN.'
+  },
+  {
+    id: 13,
+    slug: 'zulvkry-andre-lantu',
+    name: 'Zulvkry Andre Lantu',
+    role: 'Anggota',
+    photo: '/anggota/default.png',
+    instagram: '#',
+    linkedin: '#',
+    nim: '531423083',
+    bio: 'Berkontribusi pada pelaksanaan teknis program dan mendukung dokumentasi hasil kegiatan di lapangan.'
+  },
 ]
