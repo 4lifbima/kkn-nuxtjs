@@ -23,7 +23,7 @@
         class="fixed bottom-8 right-8 z-40 w-14 h-14 bg-gradient-to-br from-[#f2321d] to-orange-500 text-white rounded-2xl shadow-lg shadow-red-500/40 flex items-center justify-center hover:shadow-xl hover:shadow-red-500/50 hover:scale-110 transition-all duration-300"
         aria-label="Scroll to top"
       >
-        <Icon icon="solar:alt-arrow-up-linear" class="w-6 h-6" />
+        <Icon icon="iconoir:fast-top-circle" class="w-6 h-6" />
       </button>
     </Transition>
   </div>
