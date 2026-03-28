@@ -1,5 +1,7 @@
 # Nuxt Minimal Starter
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Nuxt_logo_%282021%29.svg/1280px-Nuxt_logo_%282021%29.svg.png" align="center" >
+
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
