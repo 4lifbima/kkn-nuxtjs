@@ -220,3 +220,45 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply from-red-600 to-orange-600;
 }
+
+/* ===== FORUM STYLES ===== */
+
+/* Light scrollbar for forum chat */
+.forum-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.forum-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 999px;
+}
+
+.forum-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 999px;
+}
+
+.forum-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.forum-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
+}
+
+/* Forum message fade-in animation */
+@keyframes forumFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-forum-fade-in {
+  animation: forumFadeIn 0.4s ease-out forwards;
+}

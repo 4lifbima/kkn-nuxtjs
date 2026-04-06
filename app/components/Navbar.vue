@@ -89,6 +89,7 @@ const menuItems = [
   { label: 'Tim', href: '#team' },
   { label: 'Artikel', href: '#articles' },
   { label: 'Galeri', href: '#gallery' },
+  { label: 'Forum', href: '/forum' },
 ]
 
 onMounted(() => {

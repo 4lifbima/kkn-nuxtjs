@@ -88,6 +88,7 @@ const quickLinks = [
   { label: 'Tim KKN', href: '#team' },
   { label: 'Artikel', href: '#articles' },
   { label: 'Galeri', href: '#gallery' },
+  { label: 'Forum Diskusi', href: '/forum' },
   { label: 'Kontak', href: '#contact' },
 ]
 
