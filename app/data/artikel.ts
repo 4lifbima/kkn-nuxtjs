@@ -20,7 +20,7 @@ export const articles: ArtikelItem[] = [
     category: 'Ekonomi',
     date: '12 Maret 2026',
     readTime: '8 menit baca',
-    image: 'https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=1200&h=700&fit=crop',
+    image: '/artikel/thumb.jpeg',
     author: 'Tim KKN Molotabu',
     contentHtml: `<p>Digitalisasi menjadi langkah penting bagi UMKM desa untuk naik kelas. Tim KKN melakukan pemetaan kebutuhan pelaku usaha, mulai dari kemampuan promosi hingga pengelolaan pelanggan.</p>
     <p>Pelatihan difokuskan pada pembuatan katalog digital, penggunaan media sosial, dan teknik komunikasi pemasaran yang sederhana namun efektif. Materi disusun berdasarkan kondisi riil pelaku usaha di lapangan.</p>
