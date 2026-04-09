@@ -68,6 +68,11 @@
 
   .article-content p {
     @apply mb-5;
+    text-align: justify;
+  }
+
+  .article-content li {
+    text-align: justify;
   }
 
   .article-content ul,

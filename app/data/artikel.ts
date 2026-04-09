@@ -26,9 +26,9 @@ export const articles: ArtikelItem[] = [
     <h1>“ANDASOPAN” Menyambut Para Ksatria Kode:<br>Selamat Datang Mahasiswa Teknik Informatika UNG di Kampung Segan, Desa Molutabu!</h1>
     <div class="author">Oleh: Warga & Pemerintah Desa Molutabu, Kec. Kabila Bone, Kab. Bonebol</div>
 
-    <p><strong>Bonebol</strong> – Ada yang beda di Kampung Segan, Desa Molutabu, awal April 2026 ini. Biasanya yang ramai cuma suara jangkrik dan ayam berkokok, tapi hari-hari ini suasananya berubah. Ada suara laptop terketik-20-an, diskusi soal algoritma di serambi masjid, bahkan sinyal Wi-Fi desa mendadak jadi primadona.</p>
+    <p><strong>Bonebol </strong> Ada yang beda di Kampung Segan, Desa Molutabu, awal April 2026 ini. Biasanya yang ramai cuma suara jangkrik dan ayam berkokok, tapi hari-hari ini suasananya berubah. Ada suara laptop terketik-20-an, diskusi soal algoritma di serambi masjid, bahkan sinyal Wi-Fi desa mendadak jadi primadona.</p>
 
-    <p>Ya, <strong>Kampung Segan</strong> –yang bukan berarti pemalas, justru penuh rasa hormat antarwarga– kini kedatangan tamu istimewa: <strong>adik-adik mahasiswa Teknik Informatika Universitas Negeri Gorontalo (UNG)</strong> yang tergabung dalam program <strong>KKN Tematik 1 dan Berdampak tahun 2026</strong>.</p>
+    <p>Ya, <strong>Kampung Segan</strong> yang bukan berarti pemalas, justru penuh rasa hormat antarwarga kini kedatangan tamu istimewa: <strong>adik-adik mahasiswa Teknik Informatika Universitas Negeri Gorontalo (UNG)</strong> yang tergabung dalam program <strong>KKN Tematik 1 dan Berdampak tahun 2026</strong>.</p>
 
     <p>Kedatangan mereka disambut dengan hangat oleh warga di bawah spanduk sederhana bertuliskan <strong>"ANDASOPAN"</strong>. Dalam bahasa lokal, Andasopan berarti <em>saling menjaga, saling mengayomi</em>. Dan itulah yang ingin kami tanamkan sejak kaki mereka pertama kali menginjak tanah desa.</p>
 
@@ -46,7 +46,7 @@ export const articles: ArtikelItem[] = [
         “Kalian bukan tamu. Kalian adalah keluarga baru kami. Jangan segan-segan (meski kampung ini namanya Kampung Segan). Kalau butuh air, kopi, atau sekadar tempat nongkrong sambil nugas, rumah kami terbuka.”
     </div>
 
-    <p>Kami sadar, desa ini mungkin belum ada startup atau laboratorium canggih. Tapi kami punya langit luas, sinyal yang kadang naik turun, dan hati yang tulus. Dan kami percaya, anak-anak Teknik Informatika UNG inilah yang akan membantu desa kami melompat ke era digital – tanpa meninggalkan akar gotong royong.</p>
+    <p>Kami sadar, desa ini mungkin belum ada startup atau laboratorium canggih. Tapi kami punya langit luas, sinyal yang kadang naik turun, dan hati yang tulus. Dan kami percaya, anak-anak Teknik Informatika UNG inilah yang akan membantu desa kami melompat ke era digital  tanpa meninggalkan akar gotong royong.</p>
 
     <h2>Pesan dari Warga: Terima Kasih Sudah Mau Turun ke Tanah</h2>
     <p>Di sela-sela acara penyambutan, seorang nenek bernama <strong>Oma Fatma</strong> memegang tangan salah satu mahasiswa dan berkata, “Kamu anak mana, Nak? Jangan sungkan-sungkan ke sini. Nanti kalau kangen masakan kampung, mampir lagi ya. Jangan cuma pas KKN.”</p>
@@ -55,7 +55,7 @@ export const articles: ArtikelItem[] = [
 
     <div class="sambutan">
         <p><strong>Penutup dari Kami, Warga Desa Molutabu:</strong></p>
-        <p>Selamat menjalankan KKN, adik-adik Teknik Informatika UNG. Semoga <strong>ANDASOPAN</strong> –saling menjaga– selalu menyertai langkah kalian. Jangan lupa makan, jangan lupa ibadah, dan jangan lupa kalau desa ini sudah jadi rumah kedua kalian.</p>
+        <p>Selamat menjalankan KKN, adik-adik Teknik Informatika UNG. Semoga <strong>ANDASOPAN</strong> saling menjaga selalu menyertai langkah kalian. Jangan lupa makan, jangan lupa ibadah, dan jangan lupa kalau desa ini sudah jadi rumah kedua kalian.</p>
     </div>
 
     <div class="footer">
