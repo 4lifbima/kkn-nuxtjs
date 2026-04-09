@@ -23,6 +23,9 @@
               <a v-if="member.email" :href="`mailto:${member.email}`" class="btn-secondary !px-5 !py-3 !text-sm">
                 <Icon icon="mdi:email-outline" class="w-4 h-4 mr-2" /> Email
               </a>
+              <a v-if="member.github" :href="member.github" target="_blank" class="btn-secondary !px-5 !py-3 !text-sm">
+                <Icon icon="mdi:github" class="w-4 h-4 mr-2" /> GitHub
+              </a>
             </div>
           </div>
         </div>

@@ -6,6 +6,7 @@ export type AnggotaItem = {
   photo: string
   instagram?: string
   linkedin?: string
+  github?: string
   email?: string
   nim: number | string
   bio: string
@@ -95,8 +96,9 @@ export const teamMembers: AnggotaItem[] = [
     name: 'Alif Bima Pradana',
     role: 'Anggota',
     photo: '/anggota/ANGGOTA.png',
-    instagram: '#',
-    linkedin: '#',
+    instagram: 'https://www.instagram.com/alifbimapradana07/',
+    linkedin: 'https://www.linkedin.com/in/alif-bima-pradana/',
+    github: 'https://github.com/4lifbima/',
     nim: '531423009',
     bio: 'Membantu pelaksanaan program kerja lapangan serta mendukung koordinasi antar divisi untuk kelancaran kegiatan KKN.'
   },
