@@ -85,7 +85,7 @@ const isMobileMenuOpen = ref(false)
 
 const menuItems = [
   { label: 'Beranda', href: '#home' },
-  { label: 'Tentang', href: '#about' },
+  { label: 'DPL', href: '#about' },
   { label: 'Tim', href: '#team' },
   { label: 'Artikel', href: '#articles' },
   { label: 'Galeri', href: '#gallery' },

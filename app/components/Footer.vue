@@ -84,7 +84,7 @@ const socials = [
 ]
 
 const quickLinks = [
-  { label: 'Tentang Kami', href: '#about' },
+  { label: 'Dosen Pembimbing', href: '#about' },
   { label: 'Tim KKN', href: '#team' },
   { label: 'Artikel', href: '#articles' },
   { label: 'Galeri', href: '#gallery' },
