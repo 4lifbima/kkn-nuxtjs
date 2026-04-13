@@ -21,7 +21,7 @@ export const articles: ArtikelItem[] = [
     date: '8 April 2026',
     readTime: '8 menit baca',
     image: '/artikel/thumb.jpeg',
-    author: 'Tim KKN Molotabu',
+    author: 'Alya Awalia Tokalang',
     contentHtml: `<div class="article">
     <h1>“ANDASOPAN” Menyambut Para Ksatria Kode:<br>Selamat Datang Mahasiswa Teknik Informatika UNG di Kampung Segan, Desa Molutabu!</h1>
     <div class="author">Oleh: Warga & Pemerintah Desa Molutabu, Kec. Kabila Bone, Kab. Bonebol</div>

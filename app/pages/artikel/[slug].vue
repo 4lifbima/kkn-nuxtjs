@@ -45,12 +45,10 @@
           <div class="card-elevated p-6 !hover:translate-y-0">
             <p class="text-xs font-semibold uppercase tracking-wide text-[#f2321d] mb-3">Penulis</p>
             <div class="flex items-center gap-4 mb-4">
-              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#f2321d] to-orange-500 text-white font-bold text-xl inline-flex items-center justify-center">
-                {{ authorInitial }}
-              </div>
+              <img src="/anggota/alyax.jpeg"  class="w-14 h-14 rounded-2xl  font-bold text-xl inline-flex items-center justify-center">
               <div>
                 <p class="font-bold text-gray-900">{{ article.author }}</p>
-                <p class="text-sm text-gray-500">Admin KKN Molotabu</p>
+                <p class="text-sm text-gray-500">Admin KKN Berdampak</p>
               </div>
             </div>
             <span class="inline-flex items-center px-3 py-1 rounded-full bg-red-50 text-[#f2321d] text-xs font-semibold">
