@@ -36,7 +36,7 @@
               <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
                 <!-- Photo -->
                 <div class="relative flex-shrink-0">
-                  <div class="w-28 h-32 rounded-2xl overflow-hidden ring-4 ring-gray-100 group-hover:ring-red-100 transition-all duration-500 shadow-lg">
+                  <div class="w-28 h-42 rounded-2xl overflow-hidden ring-4 ring-gray-100 group-hover:ring-red-100 transition-all duration-500 shadow-lg">
                     <img
                       :src="dpl.photo"
                       :alt="dpl.name"
@@ -112,7 +112,7 @@ const dplList = [
   {
     id: 1,
     name: 'Dr. Moh. Hidayat Koniyo, ST, M.Kom',
-    nip: '198xxxxxxxxx',
+    nip: '197304162001121001',
     role: 'Ketua DPL KKN Desa Molotabu',
     roleIcon: 'solar:square-academic-cap-linear',
     photo: '/dosen/hidayat.png',
@@ -124,7 +124,7 @@ const dplList = [
   {
     id: 2,
     name: 'Muchlis Polin, S.Kom, M.Kom',
-    nip: '199xxxxxxxxx',
+    nip: '198411222019031004',
     role: 'Dosen Pembimbing Lapangan',
     roleIcon: 'solar:square-academic-cap-linear',
     photo: '/dosen/muchlis.png',
@@ -136,7 +136,7 @@ const dplList = [
   {
     id: 3,
     name: 'Nikmasari Pakaya, S.Kom., M.T.',
-    nip: '200xxxxxxxxx',
+    nip: '198602142015042002',
     role: 'Dosen Pembimbing Lapangan',
     roleIcon: 'solar:square-academic-cap-linear',
     photo: '/dosen/nikma.png',
@@ -148,7 +148,7 @@ const dplList = [
   {
     id: 4,
     name: 'Budiyanto Ahaliki, S.Si, M.Kom',
-    nip: '197xxxxxxxxx',
+    nip: '198905262019031006',
     role: 'Dosen Pembimbing Lapangan',
     roleIcon: 'solar:square-academic-cap-linear',
     photo: '/dosen/budi.png',
