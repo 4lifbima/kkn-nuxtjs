@@ -12,8 +12,8 @@
           <span class="heading-gradient">Para Pengabdi</span>
         </h2>
         <p class="text-lg text-gray-600">
-          Mahasiswa berdedikasi tinggi yang siap memberikan kontribusi terbaik 
-          untuk pembangunan Desa Molotabu.
+          Mahasiswa yang siap memberikan kontribusi terbaik 
+          untuk pembangunan UMKM Desa Molotabu.
         </p>
       </div>
 
