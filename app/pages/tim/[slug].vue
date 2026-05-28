@@ -44,8 +44,10 @@
 import { teamMembers } from '~/data/anggota'
 
 const route = useRoute()
+const config = useRuntimeConfig()
 const slug = computed(() => String(route.params.slug || ''))
 const member = computed(() => teamMembers.find(item => item.slug === slug.value))
+const siteUrl = computed(() => String(config.public.siteUrl || 'https://kkndesamolutabu.vercel.app').replace(/\/$/, ''))
 
 const breadcrumbItems = computed(() => [
   { label: 'Beranda', to: '/' },
@@ -53,7 +55,12 @@ const breadcrumbItems = computed(() => [
   { label: member.value?.name || 'Detail Tim' }
 ])
 
-const canonicalUrl = computed(() => `https://kkn-nuxtjs.vercel.app/tim/${slug.value}`)
+const canonicalUrl = computed(() => `${siteUrl.value}/tim/${slug.value}`)
+const ogImageUrl = computed(() => {
+  const image = member.value?.photo || '/ung.png'
+  if (/^https?:\/\//i.test(image)) return image
+  return `${siteUrl.value}${image.startsWith('/') ? '' : '/'}${image}`
+})
 
 useHead(() => ({
   title: member.value ? member.value.name : 'Detail Tim',
@@ -66,7 +73,11 @@ useSeoMeta({
   description: computed(() => member.value?.bio || 'Detail profil tim KKN Desa Molotabu.'),
   ogTitle: computed(() => member.value?.name || 'Detail Tim'),
   ogDescription: computed(() => member.value?.bio || 'Detail profil tim KKN Desa Molotabu.'),
-  ogImage: computed(() => member.value?.photo),
+  ogUrl: canonicalUrl,
+  ogImage: ogImageUrl,
+  twitterTitle: computed(() => member.value?.name || 'Detail Tim'),
+  twitterDescription: computed(() => member.value?.bio || 'Detail profil tim KKN Desa Molotabu.'),
+  twitterImage: ogImageUrl,
   twitterCard: 'summary_large_image',
   robots: computed(() => (member.value ? 'index, follow' : 'noindex, nofollow'))
 })

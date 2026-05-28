@@ -135,6 +135,10 @@
 
 <script setup>
 const { user, profile, loading, isAdmin, loginWithGoogle, logout } = useAuth()
+const config = useRuntimeConfig()
+const siteUrl = String(config.public.siteUrl || 'https://kkndesamolutabu.vercel.app').replace(/\/$/, '')
+const canonicalUrl = `${siteUrl}/forum`
+const ogImage = `${siteUrl}/ung.png`
 const {
   messages,
   loadingMessages,
@@ -220,12 +224,19 @@ onUnmounted(() => {
 // SEO
 useHead({
   title: 'Forum Diskusi',
-  titleTemplate: '%s | KKN Desa Molotabu',
+  link: [
+    { rel: 'canonical', href: canonicalUrl },
+  ],
 })
 
 useSeoMeta({
   description: 'Forum diskusi KKN Desa Molotabu - Berbagi pemikiran, saran, dan pertanyaan.',
   ogTitle: 'Forum Diskusi | KKN Desa Molotabu',
   ogDescription: 'Bergabung dalam diskusi bersama tim KKN Desa Molotabu.',
+  ogUrl: canonicalUrl,
+  ogImage,
+  twitterTitle: 'Forum Diskusi | KKN Desa Molotabu',
+  twitterDescription: 'Bergabung dalam diskusi bersama tim KKN Desa Molotabu.',
+  twitterImage: ogImage,
 })
 </script>

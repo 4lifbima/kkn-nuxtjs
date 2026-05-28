@@ -31,8 +31,10 @@
 import { galleryImages } from '~/data/galley'
 
 const route = useRoute()
+const config = useRuntimeConfig()
 const slug = computed(() => String(route.params.slug || ''))
 const item = computed(() => galleryImages.find(image => image.slug === slug.value))
+const siteUrl = computed(() => String(config.public.siteUrl || 'https://kkndesamolutabu.vercel.app').replace(/\/$/, ''))
 
 const breadcrumbItems = computed(() => [
   { label: 'Beranda', to: '/' },
@@ -40,7 +42,12 @@ const breadcrumbItems = computed(() => [
   { label: item.value?.title || 'Detail Galeri' }
 ])
 
-const canonicalUrl = computed(() => `https://kkn-nuxtjs.vercel.app/galeri/${slug.value}`)
+const canonicalUrl = computed(() => `${siteUrl.value}/galeri/${slug.value}`)
+const ogImageUrl = computed(() => {
+  const image = item.value?.src || '/ung.png'
+  if (/^https?:\/\//i.test(image)) return image
+  return `${siteUrl.value}${image.startsWith('/') ? '' : '/'}${image}`
+})
 
 useHead(() => ({
   title: item.value ? item.value.title : 'Detail Galeri',
@@ -53,7 +60,11 @@ useSeoMeta({
   description: computed(() => item.value?.description || 'Detail dokumentasi galeri KKN Desa Molotabu.'),
   ogTitle: computed(() => item.value?.title || 'Detail Galeri'),
   ogDescription: computed(() => item.value?.description || 'Detail dokumentasi galeri KKN Desa Molotabu.'),
-  ogImage: computed(() => item.value?.src),
+  ogUrl: canonicalUrl,
+  ogImage: ogImageUrl,
+  twitterTitle: computed(() => item.value?.title || 'Detail Galeri'),
+  twitterDescription: computed(() => item.value?.description || 'Detail dokumentasi galeri KKN Desa Molotabu.'),
+  twitterImage: ogImageUrl,
   twitterCard: 'summary_large_image',
   robots: computed(() => (item.value ? 'index, follow' : 'noindex, nofollow'))
 })

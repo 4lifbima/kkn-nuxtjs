@@ -6,13 +6,9 @@
         <!-- Brand -->
         <div class="lg:col-span-2">
           <div class="flex items-center space-x-3 mb-6">
-            <div class="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center  transition-all duration-300 group-hover:scale-105">
-            <img src="/ung.png" alt="Logo KKN Molotabu" class="w-8 h-8 lg:w-10 lg:h-10" />
+            <div class="w-22 h-8 lg:w-22 lg:h-10 flex items-center justify-center  transition-all duration-300 group-hover:scale-105">
+            <img src="/logo-putih.png" alt="Logo KKN Molotabu" class="w-22 h-8 lg:w-22 lg:h-10" />
           </div>
-            <div>
-              <h3 class="text-xl font-bold">KKN <span class="text-gradient">Molotabu</span></h3>
-              <p class="text-sm text-gray-400">Desa Molotabu</p>
-            </div>
           </div>
           <p class="text-gray-400 leading-relaxed mb-6 max-w-md">
             Program Kuliah Kerja Nyata untuk pembangunan desa yang berkelanjutan, 

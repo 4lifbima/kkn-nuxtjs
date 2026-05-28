@@ -31,8 +31,10 @@
 
 <script setup>
 const showScrollTop = ref(false)
-const siteUrl = 'https://kkn-nuxtjs.vercel.app/'
-const ogImage = 'https://kkn-nuxtjs.vercel.app/ung.png'
+const config = useRuntimeConfig()
+const siteUrl = String(config.public.siteUrl || 'https://kkndesamolutabu.vercel.app').replace(/\/$/, '')
+const canonicalUrl = `${siteUrl}/`
+const ogImage = `${siteUrl}/ung.png`
 
 onMounted(() => {
   window.addEventListener('scroll', () => {
@@ -64,32 +66,24 @@ const scrollToTop = () => {
 
 useHead({
   title: 'Beranda',
-  titleTemplate: '%s | KKN Desa Molotabu',
   link: [
-    { rel: 'canonical', href: siteUrl }
-  ],
-  icon: [
-    { rel: 'icon', type: 'image/png', href: '/ung.png' },
-    { rel: 'apple-touch-icon', sizes: '180x180', href: '/ung.png' },
-    { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/ung.png' },
-    { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/ung.png' }
-    
+    { rel: 'canonical', href: canonicalUrl }
   ],
   keywords: 'KKN, Kuliah Kerja Nyata, Desa Molotabu, Profil Tim, Artikel Kegiatan, Galeri Foto, Kontak',
   author: 'Alif Bima Pradana',
 })
 
 useSeoMeta({
-  description: 'Website resmi KKN Desa Molotabu berisi profil tim, artikel kegiatan, galeri, dan informasi kontak.',
+  description: 'Website Resmi KKN Berdampak Desa Molutabu - Fakultas Teknik Jurusan Teknik Informatika Program Studi Sistem Informasi Universitas Negeri Gorontalo',
   ogTitle: 'KKN Desa Molotabu',
-  ogDescription: 'Profil, artikel, galeri, dan kontak resmi KKN Desa Molotabu.',
+  ogDescription: 'Website Resmi KKN Berdampak Desa Molutabu - Fakultas Teknik Jurusan Teknik Informatika Program Studi Sistem Informasi Universitas Negeri Gorontalo',
   ogImage,
-  ogUrl: siteUrl,
+  ogUrl: canonicalUrl,
   ogType: 'website',
   ogSiteName: 'KKN Desa Molotabu',
   ogLocale: 'id_ID',
   twitterTitle: 'KKN Desa Molotabu',
-  twitterDescription: 'Profil, artikel, galeri, dan kontak resmi KKN Desa Molotabu.',
+  twitterDescription: 'Website Resmi KKN Berdampak Desa Molutabu - Fakultas Teknik Jurusan Teknik Informatika Program Studi Sistem Informasi Universitas Negeri Gorontalo',
   twitterImage: ogImage,
   twitterCard: 'summary_large_image',
   robots: 'index, follow'

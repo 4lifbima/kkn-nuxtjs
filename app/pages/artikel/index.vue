@@ -32,11 +32,27 @@
 <script setup lang="ts">
 import { articles } from '~/data/artikel'
 
-useSeoMeta({
+const config = useRuntimeConfig()
+const siteUrl = String(config.public.siteUrl || 'https://kkndesamolutabu.vercel.app').replace(/\/$/, '')
+const canonicalUrl = `${siteUrl}/artikel`
+const ogImage = `${siteUrl}/ung.png`
+
+useHead({
   title: 'Daftar Artikel KKN Molotabu',
+  link: [
+    { rel: 'canonical', href: canonicalUrl },
+  ],
+})
+
+useSeoMeta({
   description: 'Halaman daftar lengkap artikel kegiatan KKN Desa Molotabu.',
   ogTitle: 'Daftar Artikel KKN Molotabu',
   ogDescription: 'Baca seluruh artikel kegiatan KKN Desa Molotabu.',
+  ogUrl: canonicalUrl,
+  ogImage,
+  twitterTitle: 'Daftar Artikel KKN Molotabu',
+  twitterDescription: 'Baca seluruh artikel kegiatan KKN Desa Molotabu.',
+  twitterImage: ogImage,
   robots: 'index, follow'
 })
 </script>

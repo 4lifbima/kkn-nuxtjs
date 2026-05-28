@@ -28,11 +28,27 @@
 <script setup lang="ts">
 import { teamMembers } from '~/data/anggota'
 
-useSeoMeta({
+const config = useRuntimeConfig()
+const siteUrl = String(config.public.siteUrl || 'https://kkndesamolutabu.vercel.app').replace(/\/$/, '')
+const canonicalUrl = `${siteUrl}/tim`
+const ogImage = `${siteUrl}/ung.png`
+
+useHead({
   title: 'Daftar Tim KKN Molotabu',
+  link: [
+    { rel: 'canonical', href: canonicalUrl },
+  ],
+})
+
+useSeoMeta({
   description: 'Halaman daftar lengkap profil anggota tim KKN Desa Molotabu.',
   ogTitle: 'Daftar Tim KKN Molotabu',
   ogDescription: 'Lihat profil anggota tim KKN Desa Molotabu.',
+  ogUrl: canonicalUrl,
+  ogImage,
+  twitterTitle: 'Daftar Tim KKN Molotabu',
+  twitterDescription: 'Lihat profil anggota tim KKN Desa Molotabu.',
+  twitterImage: ogImage,
   robots: 'index, follow'
 })
 </script>

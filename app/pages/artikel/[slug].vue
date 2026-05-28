@@ -91,8 +91,10 @@
 import { articles } from '~/data/artikel'
 
 const route = useRoute()
+const config = useRuntimeConfig()
 const slug = computed(() => String(route.params.slug || ''))
 const article = computed(() => articles.find(item => item.slug === slug.value))
+const siteUrl = computed(() => String(config.public.siteUrl || 'https://kkndesamolutabu.vercel.app').replace(/\/$/, ''))
 
 const breadcrumbItems = computed(() => [
   { label: 'Beranda', to: '/' },
@@ -100,7 +102,12 @@ const breadcrumbItems = computed(() => [
   { label: article.value?.title || 'Detail Artikel' }
 ])
 
-const canonicalUrl = computed(() => `https://kkn-nuxtjs.vercel.app/artikel/${slug.value}`)
+const canonicalUrl = computed(() => `${siteUrl.value}/artikel/${slug.value}`)
+const ogImageUrl = computed(() => {
+  const image = article.value?.image || '/ung.png'
+  if (/^https?:\/\//i.test(image)) return image
+  return `${siteUrl.value}${image.startsWith('/') ? '' : '/'}${image}`
+})
 const encodedTitle = computed(() => encodeURIComponent(article.value?.title || 'Artikel KKN Molotabu'))
 const encodedUrl = computed(() => encodeURIComponent(canonicalUrl.value))
 
@@ -152,8 +159,12 @@ useSeoMeta({
   description: computed(() => article.value?.excerpt || 'Detail artikel kegiatan KKN Desa Molotabu.'),
   ogTitle: computed(() => article.value?.title || 'Detail Artikel'),
   ogDescription: computed(() => article.value?.excerpt || 'Detail artikel kegiatan KKN Desa Molotabu.'),
-  ogImage: computed(() => article.value?.image),
+  ogUrl: canonicalUrl,
+  ogImage: ogImageUrl,
   ogType: 'article',
+  twitterTitle: computed(() => article.value?.title || 'Detail Artikel'),
+  twitterDescription: computed(() => article.value?.excerpt || 'Detail artikel kegiatan KKN Desa Molotabu.'),
+  twitterImage: ogImageUrl,
   twitterCard: 'summary_large_image',
   robots: computed(() => (article.value ? 'index, follow' : 'noindex, nofollow'))
 })

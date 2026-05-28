@@ -24,11 +24,27 @@
 <script setup lang="ts">
 import { galleryImages } from '~/data/galley'
 
-useSeoMeta({
+const config = useRuntimeConfig()
+const siteUrl = String(config.public.siteUrl || 'https://kkndesamolutabu.vercel.app').replace(/\/$/, '')
+const canonicalUrl = `${siteUrl}/galeri`
+const ogImage = `${siteUrl}/ung.png`
+
+useHead({
   title: 'Galeri KKN Molotabu',
+  link: [
+    { rel: 'canonical', href: canonicalUrl },
+  ],
+})
+
+useSeoMeta({
   description: 'Halaman daftar lengkap galeri kegiatan KKN Desa Molotabu.',
   ogTitle: 'Galeri KKN Molotabu',
   ogDescription: 'Lihat dokumentasi galeri kegiatan KKN Desa Molotabu.',
+  ogUrl: canonicalUrl,
+  ogImage,
+  twitterTitle: 'Galeri KKN Molotabu',
+  twitterDescription: 'Lihat dokumentasi galeri kegiatan KKN Desa Molotabu.',
+  twitterImage: ogImage,
   robots: 'index, follow'
 })
 </script>

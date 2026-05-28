@@ -9,12 +9,8 @@
       >
         <!-- Logo -->
         <NuxtLink to="/" class="flex items-center space-x-3 group">
-          <div class="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center  transition-all duration-300 group-hover:scale-105">
-            <img src="/ung.png" alt="Logo KKN Molotabu" class="w-8 h-8 lg:w-10 lg:h-10" />
-          </div>
-          <div>
-            <h1 class="text-md lg:text-xl font-extrabold text-gray-900">KKN <span class="text-gradient">Molotabu</span></h1>
-            <p class="text-xs text-gray-500">Kecamatan Kabila Bone</p>
+          <div class="w-22 h-8 lg:w-22 lg:h-10 flex items-center justify-center  transition-all duration-300 group-hover:scale-105">
+            <img src="/logo-kkn.png" alt="Logo KKN Molotabu" class="w-22 h-8 lg:w-22 lg:h-10" />
           </div>
         </NuxtLink>
 
