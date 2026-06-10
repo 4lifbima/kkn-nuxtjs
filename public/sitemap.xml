@@ -1,28 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://kkndesamolutabu.vercel.app/</loc>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://kkndesamolutabu.vercel.app/artikel</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://kkndesamolutabu.vercel.app/galeri</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://kkndesamolutabu.vercel.app/tim</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kkndesamolutabu.vercel.app/forum</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/forum</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/tim/i-wayan-arya-aditya</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/tim/rizki-ibrahim</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/tim/Nazly-siti-zulaiha-napu</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/tim/suci-rahmawaty-utina</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/tim</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/artikel/transformasi-umkm-desa-molotabu</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/artikel</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/galeri/sosialisasi-program-desa</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/galeri/bimbingan-belajar-sore</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/galeri/pelatihan-umkm</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/galeri/kerja-bakti-desa</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/galeri/penyuluhan-kesehatan</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/galeri/penghijauan-lingkungan</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/galeri</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/tim/alya-awaliyah-tokalang</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/tim/rashyid-ridho-akuba</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/tim/zulvkry-andre-lantu</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/tim/alif-bima-pradana</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/tim/raya-rizali-mutawakkil-mantau</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/tim/ilham-ts-bullah</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/tim/sitti-rahwati-moki</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/tim/sri-wahyuni-j-mahadi</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kkndesamolutabu.vercel.app/tim/dea-maharani-r-yunus</loc>
+  <lastmod>2026-06-10T19:27:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
