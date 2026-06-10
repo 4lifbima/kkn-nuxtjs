@@ -26,6 +26,12 @@
               <a v-if="member.github" :href="member.github" target="_blank" class="btn-secondary !px-5 !py-3 !text-sm">
                 <Icon icon="mdi:github" class="w-4 h-4 mr-2" /> GitHub
               </a>
+              <a v-if="member.website" :href="member.website" target="_blank" class="btn-secondary !px-5 !py-3 !text-sm">
+                <Icon icon="mdi:web" class="w-4 h-4 mr-2" /> Website
+              </a>
+              <a v-if="member.whatsapp" :href="member.whatsapp" target="_blank" class="btn-secondary !px-5 !py-3 !text-sm">
+                <Icon icon="mdi:whatsapp" class="w-4 h-4 mr-2" /> WhatsApp
+              </a>
             </div>
           </div>
         </div>

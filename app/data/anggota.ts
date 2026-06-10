@@ -8,6 +8,8 @@ export type AnggotaItem = {
   linkedin?: string
   github?: string
   email?: string
+  website?: string
+  whatsapp?: string
   nim: number | string
   bio: string
 }
@@ -99,8 +101,10 @@ export const teamMembers: AnggotaItem[] = [
     instagram: 'https://www.instagram.com/alifbimapradana07/',
     linkedin: 'https://www.linkedin.com/in/alif-bima-pradana/',
     github: 'https://github.com/4lifbima/',
+    website: 'https://alifbima.my.id',
+    whatsapp: 'https://wa.me/6282291383797',
     nim: '531423009',
-    bio: 'Membantu pelaksanaan program kerja lapangan serta mendukung koordinasi antar divisi untuk kelancaran kegiatan KKN.'
+    bio: 'Membantu pelaksanaan program kerja lapangan serta mendukung koordinasi antar divisi untuk kelancaran kegiatan KKN. alif bima juga adalah salah satu progrmammer utama dalam pengembangan website resmi KKN Berdampak Desa Molotabu, memastikan informasi kegiatan dapat diakses dengan mudah oleh para pelaku umkm dan masyarakat luas.'
   },
   {
     id: 9,
