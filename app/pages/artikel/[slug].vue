@@ -104,7 +104,7 @@ const breadcrumbItems = computed(() => [
 
 const canonicalUrl = computed(() => `${siteUrl.value}/artikel/${slug.value}`)
 const ogImageUrl = computed(() => {
-  const image = article.value?.image || '/ung.png'
+  const image = article.value?.image || '/biru-kkn.png'
   if (/^https?:\/\//i.test(image)) return image
   return `${siteUrl.value}${image.startsWith('/') ? '' : '/'}${image}`
 })

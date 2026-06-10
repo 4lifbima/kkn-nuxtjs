@@ -34,7 +34,7 @@ const showScrollTop = ref(false)
 const config = useRuntimeConfig()
 const siteUrl = String(config.public.siteUrl || 'https://kkndesamolutabu.vercel.app').replace(/\/$/, '')
 const canonicalUrl = `${siteUrl}/`
-const ogImage = `${siteUrl}/ung.png`
+const ogImage = `${siteUrl}/biru-kkn.png`
 
 onMounted(() => {
   window.addEventListener('scroll', () => {
@@ -75,14 +75,14 @@ useHead({
 
 useSeoMeta({
   description: 'Website Resmi KKN Berdampak Desa Molutabu - Fakultas Teknik Jurusan Teknik Informatika Program Studi Sistem Informasi Universitas Negeri Gorontalo',
-  ogTitle: 'KKN Desa Molotabu',
+  ogTitle: 'KKN Berdampak Desa Molotabu',
   ogDescription: 'Website Resmi KKN Berdampak Desa Molutabu - Fakultas Teknik Jurusan Teknik Informatika Program Studi Sistem Informasi Universitas Negeri Gorontalo',
   ogImage,
   ogUrl: canonicalUrl,
   ogType: 'website',
-  ogSiteName: 'KKN Desa Molotabu',
+  ogSiteName: 'KKN Berdampak Desa Molotabu',
   ogLocale: 'id_ID',
-  twitterTitle: 'KKN Desa Molotabu',
+  twitterTitle: 'KKN Berdampak Desa Molotabu',
   twitterDescription: 'Website Resmi KKN Berdampak Desa Molutabu - Fakultas Teknik Jurusan Teknik Informatika Program Studi Sistem Informasi Universitas Negeri Gorontalo',
   twitterImage: ogImage,
   twitterCard: 'summary_large_image',

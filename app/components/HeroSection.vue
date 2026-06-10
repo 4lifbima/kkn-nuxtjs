@@ -15,13 +15,13 @@
         <!-- Badge -->
         <div class="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-xl border border-gray-200 rounded-full px-5 py-2.5 mb-8 shadow-lg shadow-gray-200/50 animate-fade-in">
           <span class="w-2 h-2 bg-[#f2321d] rounded-full animate-pulse"></span>
-          <span class="text-sm font-medium text-gray-700">KKN Desa Molotabu 2026</span>
+          <span class="text-sm font-medium text-gray-700">KKN BERDAMPAK Desa Molotabu 2026</span>
         </div>
 
         <!-- Main Headline -->
         <h1 class="text-4xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-10 animate-slide-up">
           <span class="block text-gray-900">Kuliah Kerja Nyata</span>
-          <span class="block heading-gradient">Untuk Negeri</span>
+          <span class="block heading-gradient">BERDAMPAK</span>
         </h1>
 
         <!-- Subheadline -->

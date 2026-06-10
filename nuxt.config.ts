@@ -26,7 +26,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'KKN Desa Molotabu - Official Website',
+      title: 'KKN Berdampak Desa Molotabu - Official Website',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -34,9 +34,9 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#f2321d' },
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/ung.png' },
-        { rel: 'shortcut icon', type: 'image/png', href: '/ung.png' },
-        { rel: 'apple-touch-icon', sizes: '180x180', href: '/ung.png' },
+        { rel: 'icon', type: 'image/png', href: '/biru-kkn.png' },
+        { rel: 'shortcut icon', type: 'image/png', href: '/biru-kkn.png' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/biru-kkn.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap' },

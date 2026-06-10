@@ -8,10 +8,10 @@
 const route = useRoute()
 const config = useRuntimeConfig()
 
-const siteName = 'KKN Desa Molotabu'
-const defaultDescription = 'Website resmi KKN Desa Molotabu berisi profil tim, artikel kegiatan, galeri, forum, dan informasi kontak.'
+const siteName = 'KKN Berdampak Desa Molotabu'
+const defaultDescription = 'Website resmi KKN Berdampak Desa Molotabu - Fakultas Teknik Jurusan Teknik Informatika Program Studi Sistem Informasi Universitas Negeri Gorontalo'
 const siteUrl = computed(() => String(config.public.siteUrl || 'https://kkndesamolutabu.vercel.app').replace(/\/$/, ''))
-const defaultOgImage = computed(() => `${siteUrl.value}/ung.png`)
+const defaultOgImage = computed(() => `${siteUrl.value}/biru-kkn.png`)
 const canonicalUrl = computed(() => {
   const path = route.path.startsWith('/') ? route.path : `/${route.path}`
   return `${siteUrl.value}${path}`

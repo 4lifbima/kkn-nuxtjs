@@ -31,7 +31,7 @@ import { teamMembers } from '~/data/anggota'
 const config = useRuntimeConfig()
 const siteUrl = String(config.public.siteUrl || 'https://kkndesamolutabu.vercel.app').replace(/\/$/, '')
 const canonicalUrl = `${siteUrl}/tim`
-const ogImage = `${siteUrl}/ung.png`
+const ogImage = `${siteUrl}/biru-kkn.png`
 
 useHead({
   title: 'Daftar Tim KKN Molotabu',

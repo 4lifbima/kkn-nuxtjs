@@ -27,7 +27,7 @@ import { galleryImages } from '~/data/galley'
 const config = useRuntimeConfig()
 const siteUrl = String(config.public.siteUrl || 'https://kkndesamolutabu.vercel.app').replace(/\/$/, '')
 const canonicalUrl = `${siteUrl}/galeri`
-const ogImage = `${siteUrl}/ung.png`
+const ogImage = `${siteUrl}/biru-kkn.png`
 
 useHead({
   title: 'Galeri KKN Molotabu',

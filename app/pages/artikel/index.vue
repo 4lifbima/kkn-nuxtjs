@@ -35,7 +35,7 @@ import { articles } from '~/data/artikel'
 const config = useRuntimeConfig()
 const siteUrl = String(config.public.siteUrl || 'https://kkndesamolutabu.vercel.app').replace(/\/$/, '')
 const canonicalUrl = `${siteUrl}/artikel`
-const ogImage = `${siteUrl}/ung.png`
+const ogImage = `${siteUrl}/biru-kkn.png`
 
 useHead({
   title: 'Daftar Artikel KKN Molotabu',

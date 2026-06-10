@@ -44,7 +44,7 @@ const breadcrumbItems = computed(() => [
 
 const canonicalUrl = computed(() => `${siteUrl.value}/galeri/${slug.value}`)
 const ogImageUrl = computed(() => {
-  const image = item.value?.src || '/ung.png'
+  const image = item.value?.src || '/biru-kkn.png'
   if (/^https?:\/\//i.test(image)) return image
   return `${siteUrl.value}${image.startsWith('/') ? '' : '/'}${image}`
 })

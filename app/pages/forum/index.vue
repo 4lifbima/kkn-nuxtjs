@@ -138,7 +138,7 @@ const { user, profile, loading, isAdmin, loginWithGoogle, logout } = useAuth()
 const config = useRuntimeConfig()
 const siteUrl = String(config.public.siteUrl || 'https://kkndesamolutabu.vercel.app').replace(/\/$/, '')
 const canonicalUrl = `${siteUrl}/forum`
-const ogImage = `${siteUrl}/ung.png`
+const ogImage = `${siteUrl}/biru-kkn.png`
 const {
   messages,
   loadingMessages,
