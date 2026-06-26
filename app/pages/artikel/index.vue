@@ -276,10 +276,14 @@ useSeoMeta({
 // Helper formatting functions
 const getImageUrl = (imagePath?: string) => {
   if (!imagePath) return '/artikel/thumb.jpeg'
-  if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
-    return imagePath
+  let cleanPath = imagePath
+  cleanPath = cleanPath.replace(/http:\/\/192\.168\.30\.129:8000/g, 'https://api-molutabu.aliapps.my.id')
+  cleanPath = cleanPath.replace(/http:\/\/localhost:8000/g, 'https://api-molutabu.aliapps.my.id')
+  
+  if (cleanPath.startsWith('http://') || cleanPath.startsWith('https://')) {
+    return cleanPath
   }
-  return `https://api-molutabu.aliapps.my.id/storage/${imagePath}`
+  return `https://api-molutabu.aliapps.my.id/storage/${cleanPath}`
 }
 
 const formatDate = (dateStr?: string) => {

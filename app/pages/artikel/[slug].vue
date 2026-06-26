@@ -90,7 +90,7 @@
           </div>
 
           <!-- HTML Content rendering -->
-          <div class="article-content" v-html="article.content"></div>
+          <div class="article-content" v-html="formattedContent"></div>
 
           <!-- Social Share panel -->
           <div class="mt-12 p-6 md:p-8 bg-white rounded-3xl border border-gray-100 shadow-sm">
@@ -189,14 +189,22 @@ const relatedArticles = computed(() => {
   return list.filter((item: any) => item.id !== article.value.id).slice(0, 4)
 })
 
+// Replace backend local IP/domain with the production API domain in rich text content
+const formattedContent = computed(() => {
+  if (!article.value?.content) return ''
+  let content = article.value.content
+  content = content.replace(/http:\/\/192\.168\.30\.129:8000/g, 'https://api-molutabu.aliapps.my.id')
+  content = content.replace(/http:\/\/localhost:8000/g, 'https://api-molutabu.aliapps.my.id')
+  return content
+})
+
 // Share properties
 const siteUrl = computed(() => String(config.public.siteUrl || 'https://kkndesamolutabu.vercel.app').replace(/\/$/, ''))
 const canonicalUrl = computed(() => `${siteUrl.value}/artikel/${slug.value}`)
 const ogImageUrl = computed(() => {
   const image = article.value?.image
   if (!image) return `${siteUrl.value}/biru-kkn.png`
-  if (/^https?:\/\//i.test(image)) return image
-  return `https://api-molutabu.aliapps.my.id/storage/${image}`
+  return getImageUrl(image)
 })
 const encodedTitle = computed(() => encodeURIComponent(article.value?.title || 'Artikel KKN Molotabu'))
 const encodedUrl = computed(() => encodeURIComponent(canonicalUrl.value))
@@ -264,10 +272,14 @@ useSeoMeta({
 // Helper formatting functions
 const getImageUrl = (imagePath?: string) => {
   if (!imagePath) return '/artikel/thumb.jpeg'
-  if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
-    return imagePath
+  let cleanPath = imagePath
+  cleanPath = cleanPath.replace(/http:\/\/192\.168\.30\.129:8000/g, 'https://api-molutabu.aliapps.my.id')
+  cleanPath = cleanPath.replace(/http:\/\/localhost:8000/g, 'https://api-molutabu.aliapps.my.id')
+  
+  if (cleanPath.startsWith('http://') || cleanPath.startsWith('https://')) {
+    return cleanPath
   }
-  return `https://api-molutabu.aliapps.my.id/storage/${imagePath}`
+  return `https://api-molutabu.aliapps.my.id/storage/${cleanPath}`
 }
 
 const formatDate = (dateStr?: string) => {
